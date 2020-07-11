@@ -3,11 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
   </head>
   <body>
+    <svg height="400" width="400">
+        <circle
+          r="190"
+          cx="200"
+          cy="200"
+          fill="transparent"
+          stroke="blue"
+          stroke-width="15"
+          transform = "rotate(-90 200 200)"
+        />
+        <!-- stroke-dasharray make dashed line, first parameter is line length, second spacing length, will be set by js-->
+        <!-- each circle starts at right hand side, stroke offset goes in counterclockwise direction, set by js -->
+        <!-- transform -90deg of rotation/ 100 100 is center of rotation -->
+    </svg>
     <input id="duration" type="text" name="" value="30"/>
-    <button id="start" type="button" name="button">Start</button>
-    <button id="pause" type="button" name="button">Pause</button>
-    <script type="text/javascript" src="index.js"></script>
+    <button id="start" type="button" name="button"><i class="far fa-play-circle"></i></button>
+    <button id="pause" type="button" name="button"><i class="far fa-pause-circle"></i></button>
+    <script type="text/javascript" src="timerClass.js"></script>
+    <script type="text/javascript" src="timer.js"></script>
   </body>
 </html>
