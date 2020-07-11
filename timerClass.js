@@ -25,12 +25,12 @@ class Timer {
 
   start = () => {
     if(this.onStart){ //check if callbacks are given in timer
-      this.onStart(this.timeRemaining);
+      this.onStart(this.timeRemaining);//getter, taking start value from input, and pass to onStart().
     }
     //  console.log(this); // solution 1. arrow function
     this.tick(); // first tick set manualy
     this.interval = setInterval(this.tick, 50);//because this is with delay
-    //timer is 1, this is id of this interval
+    //timer is 1, this is id of this interval, 50ms
     //this.interval => we can refer in other functions
   };
   /*start(){
@@ -51,7 +51,7 @@ class Timer {
     } else {
         this.timeRemaining = this.timeRemaining - .05; //setter and getter in one line
         if(this.onTick){
-          this.onTick(this.timeRemaining);
+          this.onTick(this.timeRemaining); // onTick gets changed value for input
         }
     }
   //  const timeRemaining = this.timeRemaining; // dont need(), because it is getter
