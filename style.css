@@ -16,11 +16,20 @@
   font-size: 90px;
 }
 
+.timer input:disabled{
+  background-color: transparent;
+  color: black;
+}
+
 .timer button{
   border: none;
   font-size: 50px;
   cursor: pointer;
   background-color: transparent;
+}
+
+.timer button#refresh{
+  font-size: 30px;
 }
 
 .timer button:focus{
